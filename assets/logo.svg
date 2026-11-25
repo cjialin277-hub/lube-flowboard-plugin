@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="55%" stop-color="#312E81"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+  </defs>
+  <!-- 10% safe margin baked in -->
+  <rect x="26" y="26" width="204" height="204" rx="44" fill="url(#bg)" stroke="url(#accent)" stroke-width="6"/>
+  <!-- Film slate top bar -->
+  <path d="M56 76 C56 67 63 60 72 60 H184 C193 60 200 67 200 76 V92 H56 Z" fill="url(#accent)" opacity="0.92"/>
+  <path d="M88 60 L74 92 M124 60 L110 92 M160 60 L146 92" stroke="#1E1B4B" stroke-width="7" stroke-linecap="round"/>
+  <!-- Canvas frame body -->
+  <rect x="56" y="92" width="144" height="104" rx="12" fill="#0B1120" stroke="#6366F1" stroke-width="4" opacity="0.95"/>
+  <!-- Connected node graph + Play triangle -->
+  <circle cx="84" cy="124" r="9" fill="#38BDF8"/>
+  <circle cx="84" cy="164" r="9" fill="#A78BFA"/>
+  <path d="M93 124 C112 124 112 144 128 144 M93 164 C112 164 112 144 128 144" fill="none" stroke="#818CF8" stroke-width="4.5" stroke-linecap="round"/>
+  <polygon points="134,122 174,144 134,166" fill="url(#gold)"/>
+</svg>

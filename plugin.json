@@ -1,0 +1,19 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "lube-flowboard",
+  "displayName": "Lube 影视画布 (Flowboard Studio)",
+  "version": "2.0.0",
+  "description": "AI 短剧与电影级分镜画布工作台插件：自动拉起本地影视画布、引导绑定个人 Google Flow / AI 大脑，并提供带两段式积分报价闸门的 MCP 编排工具与五阶段导演技能。",
+  "logo": "assets/logo.svg",
+  "homepage": "https://github.com/cjialin277-hub/lube-flowboard-plugin",
+  "repository": "https://github.com/cjialin277-hub/lube-flowboard-plugin",
+  "author": {
+    "name": "Lube",
+    "url": "https://github.com/cjialin277-hub"
+  },
+  "suggestedPrompts": [
+    "启动 Lube 影视画布并检查我的账号绑定状态",
+    "新建一张 9:16 竖屏短剧画布，按五阶段导演流程帮我拆镜并报价",
+    "查看当前画布节点进度，并把已完成的片段合成总成片"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "mcpServers": {
+    "studio": {
+      "command": "/bin/zsh",
+      "args": [
+        "${PLUGIN_ROOT}/scripts/start_flowboard_mcp.sh"
+      ],
+      "env": {
+        "FLOWBOARD_PLUGIN_ROOT": "${PLUGIN_ROOT}",
+        "FLOWBOARD_PLUGIN_DATA": "${PLUGIN_DATA}",
+        "FLOWBOARD_API_BASE": "http://127.0.0.1:8434",
+        "FLOWBOARD_FLOW_PROJECT_ID": "${FLOW_PROJECT_URL}",
+        "FLOWBOARD_PAYGATE_TIER": "${FLOW_PAYGATE_TIER}",
+        "NO_PROXY": "localhost,127.0.0.1,::1"
+      },
+      "variables": [
+        {
+          "name": "FLOW_PROJECT_URL",
+          "title": "Google Flow 项目网址或 UUID",
+          "description": "打开 flow.google.com 新建空白项目，直接复制浏览器地址栏整串网址或 UUID 粘贴到这里（生成的图和视频都存在你自己的项目中）。",
+          "link": "https://flow.google.com/"
+        },
+        {
+          "name": "FLOW_PAYGATE_TIER",
+          "title": "Google Flow 订阅等级",
+          "description": "Google AI Ultra 用户填 PAYGATE_TIER_TWO（推荐），Google AI Pro 用户填 PAYGATE_TIER_ONE。进入画布后也可在设置里随时热切换。"
+        }
+      ]
+    }
+  }
+}
